@@ -1,0 +1,68 @@
+.mat-toolbar {
+    background-color: #bebcbc; /* Darker grey color */
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    position:static;
+    gap: 90px;
+    height: 120px;
+    font-size: large;
+    padding-top: 20px;
+  }
+  
+  .top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to bottom, #315443, rgb(86, 128, 98));
+  }
+  
+  .logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .nav-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .nav-icon a {
+    margin: 0 5px;
+  }
+  
+  .matricule, .agence {
+    margin: 0 10px;
+    padding: 0 10px;
+    position: relative;
+  }
+  
+  .matricule:not(:last-child)::after,
+  .nav-icon:not(:last-child)::after,
+  .agence:not(:last-child)::after,
+  .dates:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: white;
+  }
+  
+  .dates p {
+    margin: 0;
+  }
+  
+  .mat-icon {
+    color: white;
+  }
+  .dates {
+    margin: 0 10px;
+    padding: 0 10px;
+    position: relative;
+    padding-left: 70px;
+  }

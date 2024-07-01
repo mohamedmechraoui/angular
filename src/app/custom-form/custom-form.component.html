@@ -1,0 +1,166 @@
+<div class="form-container">
+    <form>
+      <fieldset>
+        <legend>P.E.charge Demande de Chéques/Autoconfection Lettre de Chéque</legend>
+      <!-- Demandateur Section -->
+      <fieldset>
+        <legend>Identification</legend>
+        <div class="form-group ">
+          <label for="id">Numero de Compte:</label>
+          <input type="number" id="idCompte" name="IdCompte" />
+
+          <label for="typePiece">Devise:</label>
+          <div class="output-box" [ngClass]="{'empty': !outputText}">
+            {{ outputText || 'Empty' }}
+          </div>
+          <div class="btn-chercher">
+
+          <button mat-raised-button>Rechercher</button>
+        </div>
+          
+        </div>
+        <div class="form-group ">
+            <label for="prenom">Solde:</label>
+
+          <div class="output-box" [ngClass]="{'empty': !outputText}">
+            {{ outputText || 'Empty' }}
+          </div>
+        
+       
+          <label for="numeroPiece">Intitulé du Compte</label>
+          <div class="output-box" [ngClass]="{'empty': !outputText}">
+            {{ outputText || 'Empty' }}
+          </div>        </div>
+      </fieldset>
+      <!----client---->
+
+      <fieldset>
+        <legend>Client</legend>
+        <div class="form-group ">
+          <label for="id">Nom:</label>
+          <div class="output-box" [ngClass]="{'empty': !outputText}">
+            {{ outputText || 'Empty' }}
+          </div>
+
+          <label for="typePiece">Prénom:</label>
+          <div class="output-box" [ngClass]="{'empty': !outputText}">
+            {{ outputText || 'Empty' }}
+          </div>
+          
+          
+        </div>
+        <div class="form-group ">
+            <label for="prenom">Adress de Correspondance:</label>
+
+          <div class="output-box" [ngClass]="{'empty': !outputText}">
+            {{ outputText || 'Empty' }}
+          </div>
+        
+       
+          
+           </div>
+      </fieldset>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Chequiers Section -->
+      <fieldset>
+        <legend>Chequiers</legend>
+        <div class="form-group horizontal">
+            <label for="chequierStandard25">Chequier Standard 25</label>
+            <input type="radio" id="chequierStandard25" name="chequier" value="25" />
+            <label for="chequierStandard50">Chequier Standard 50</label>
+            <input type="radio" id="chequierStandard50" name="chequier" value="50" />
+            <label for="chequierPersonnalise">Chequier personnalisé</label>
+            <input type="radio" id="chequierPersonnalise" name="chequier" value="personnalise" />
+            <label for="chequierPersonnalise">Letter de Chéques</label>
+            <input type="radio" id="LetterdeChéquer" name="chequier" value="LetterdeChéquer" />
+
+          </div>
+
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Demandeur</legend>
+        <fieldset>
+            <legend>Identification demandeur</legend>
+            <div class="form-group ">
+                <label for="id">Type de Piéce</label>
+                <select id="typePiece" name="typePiece">
+                    <option value="CNI">CNI</option>
+                    <option value="permi">permi</option>
+                  </select>
+      
+                <label for="NumPiece">Numéro Piéce</label>
+                <input type="number" maxlength="8" />
+                <div class="btn-chercher">
+      
+                <button mat-raised-button>Rechercher Demandeur</button>
+              </div>
+                
+              </div>
+              <div class="form-group ">
+                  <label for="prenom">Nom:</label>
+                  <input type="text" id="Nom" name="NOM">
+      
+                
+                <label for="numeroPiece">Prénom:</label>
+                <input type="text" id="Prenom" name="Prenom">
+
+                
+            </div>
+            <fieldset>
+                <legend>Information demande</legend>
+
+                <div class="form-group ">
+                    <label for="prenom">Nom:</label>
+                    <input type="text" id="Nom" name="NOM">
+        
+                  
+                  <label for="numeroPiece">Prénom:</label>
+                  <input type="text" id="Prenom" name="Prenom">
+  
+                  
+              </div>
+                
+            </fieldset>
+
+
+
+
+
+        </fieldset>
+      </fieldset>
+
+
+
+
+
+  
+      
+      
+      
+      
+      
+      
+      
+      <!-- Validation Section -->
+      <div class="form-group">
+        <button type="submit">Valider</button>
+        <button type="reset">Annuler</button>
+      </div>
+    </fieldset>
+    </form>
+  </div>
+  

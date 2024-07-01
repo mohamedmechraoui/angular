@@ -1,0 +1,97 @@
+.form-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: x-large;
+  max-width: 1800px;
+  
+}
+
+fieldset {
+  border: 1px solid green;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+
+  
+}
+
+legend {
+  color: green;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center
+
+  
+}
+
+.form-group  label{
+    margin-right: 20px; /* Adjust spacing between label and input */
+  display: block;
+  margin-bottom: 5px;
+  color: green;
+  padding-left: 150px;
+  
+}
+.btn-chercher{
+    margin-left: 350px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-group input[type="radio"] {
+  width: fit-content;
+  content: 10px;;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="reset"] {
+  background-color: #ccc;
+}
+
+button:hover {
+  opacity: 0.9;
+}.output-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f0f0f0; /* Gray background */
+  }
+  
+  .output-box.empty {
+    background-color: #f0f0f0; /* Gray background for empty state */
+    color: #666; 
+    max-height: fit-content;
+    max-width: fit-content;/* Optional: Adjust text color for empty state */
+  }
+  .form-group.horizontal {
+    flex-direction: row; /* Align items horizontally */
+  }
+  .form-group  label{
+    margin-right: 20px; /* Adjust spacing between label and input */
+  display: block;
+  margin-bottom: 5px;
+  color: green;
+  padding-left: 150px;
+  
+}
